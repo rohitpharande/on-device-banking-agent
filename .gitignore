@@ -38,7 +38,7 @@ unsloth_compiled_cache/
 _unsloth_sentencepiece_temp/
 
 # --- Data (large training files) ---
-*.jsonl
+# *.jsonl
 
 # --- OS ---
 .DS_Store

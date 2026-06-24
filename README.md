@@ -229,27 +229,31 @@ The notebook's data augmentation cell can randomise numerical values (card numbe
 
 ```
 on-device-banking-agent/
-│
-├── app.py                          # Entry point (voice + text modes)
-├── requirements.txt                # Runtime dependencies
-├── requirements-training.txt       # Fine-tuning dependencies
-├── .gitignore                      # Git ignore rules
-├── LICENSE                         # MIT License
-├── README.md                       # This file
-│
-├── src/                            # Core application package
+├── app.py                     # Main application entry point
+├── requirements.txt           # Runtime dependencies
+├── requirements-training.txt  # Training dependencies
+├── .gitignore
+├── LICENSE
+├── README.md
+├── data/
+│   ├── README.md
+│   └── sample_train_data.jsonl
+├── docs/
+│   ├── architecture.md
+│   ├── architecture.png
+│   ├── architecture_diagram.png
+│   ├── dialogue_flow.md
+│   ├── fine_tuning_guide.md
+│   └── setup_guide.md
+├── models/                    # trained and downloaded model artifacts
+├── src/
 │   ├── __init__.py
-│   ├── asr_whisper.py              # ASR — Faster Whisper engine
-│   ├── tts_kokoro.py               # TTS — Kokoro-82M engine
-│   ├── orchestrator_qwen.py        # SLM client + dialogue manager
-│   └── config.py                   # Tool definitions, templates, prompts
-│
-├── training/                       # Fine-tuning resources
-│   └── finetune_qwen3.ipynb        # Step-by-step fine-tuning notebook
-│
-└── docs/                           # Documentation
-    ├── architecture.md             # System architecture deep-dive
-    └── architecture_diagram.png    # Architecture diagram
+│   ├── asr_whisper.py         # Speech-to-text (Whisper)
+│   ├── config.py              # Configuration
+│   ├── orchestrator_qwen.py   # LLM orchestrator (Qwen)
+│   └── tts_kokoro.py          # Text-to-speech (Kokoro)
+└── training/
+    └── finetune_qwen3.ipynb   # Fine-tuning notebook
 ```
 
 ---
@@ -272,3 +276,6 @@ on-device-banking-agent/
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 The base model (Qwen3-0.6B) is subject to its own license from [Qwen](https://huggingface.co/Qwen/Qwen3-0.6B).
+
+## Acknowledgements
+Thanks to @distil-labs for their tool schema and synthetic data from the repo https://github.com/distil-labs/distil-voice-assistant-banking and @Unsloth for their finetuning notebooks 
