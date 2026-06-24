@@ -1,0 +1,7 @@
+# Runtime dependencies for the BankCo Voice Assistant
+faster-whisper>=1.0.0
+kokoro>=0.9.0
+pyaudio>=0.2.14
+numpy>=1.24.0
+openai>=1.0.0
+torch>=2.0.0

@@ -1,0 +1,8 @@
+# Training / fine-tuning dependencies (GPU environment)
+# Install these IN ADDITION to requirements.txt when fine-tuning
+unsloth>=2024.0
+datasets>=2.14.0
+transformers>=4.36.0
+trl>=0.7.0
+peft>=0.6.0
+accelerate>=0.25.0
