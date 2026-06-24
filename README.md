@@ -272,3 +272,6 @@ on-device-banking-agent/
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 The base model (Qwen3-0.6B) is subject to its own license from [Qwen](https://huggingface.co/Qwen/Qwen3-0.6B).
+
+## Acknowledgements
+Thanks to @distil-labs for their tool schema and synthetic data from the repo https://github.com/distil-labs/distil-voice-assistant-banking and @Unsloth for their finetuning notebooks 
