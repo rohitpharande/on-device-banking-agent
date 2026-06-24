@@ -279,3 +279,4 @@ The base model (Qwen3-0.6B) is subject to its own license from [Qwen](https://hu
 
 ## Acknowledgements
 Thanks to @distil-labs for their tool schema and synthetic data from the repo https://github.com/distil-labs/distil-voice-assistant-banking and @Unsloth for their finetuning notebooks 
+
