@@ -116,7 +116,7 @@ Launch `llama-server` with your GGUF model:
 
 ```bash
 llama-server \
-  -m models/qwen3_06b_voice_banking_f16.gguf \
+  -m models/qwen3_06b_voice_banking_f16_0.gguf \
   --port 7002 \
   -ngl 99 \
   -c 2048 \
